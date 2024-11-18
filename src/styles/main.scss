@@ -1,0 +1,24 @@
+@use '@unocss/reset/tailwind.css';
+@import url('https://fonts.cdnfonts.com/css/tt');
+:root {
+  // font-family: "Noto Sans", system-ui, sans-serif;
+  font-family: 'TT Commons', sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  // color-scheme: light dark;
+  // color: rgba(255, 255, 255, 0.87);
+  // background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    // color: #213547;
+    background-color: #ffffff;
+  }
+}
