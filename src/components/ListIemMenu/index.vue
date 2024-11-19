@@ -10,10 +10,10 @@ import {
 
 <template>
   <Popover>
-    <PopoverTrigger>
+    <PopoverTrigger as-child>
       <Button class="p-button-text">
-        <i class="pi pi-ellipsis-v rotate-90" />
-        <div class="i-tabler-dots color-[#DA3468]" />
+        <i class="i-tabler-dots block color-[#DA3468]" />
+        <span class="sr-only">open menu</span>
       </Button>
     </PopoverTrigger>
 
