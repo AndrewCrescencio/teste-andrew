@@ -6,6 +6,8 @@ import VueRouter from 'unplugin-vue-router/vite'
 
 import { defineConfig } from 'vite'
 
+import istanbul from 'vite-plugin-istanbul'
+
 import Layouts from 'vite-plugin-vue-layouts'
 
 import webfontDownload from 'vite-plugin-webfont-dl'
@@ -38,5 +40,16 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see uno.config.ts for config
     UnoCSS(),
+    istanbul({
+      cypress: true,
+      include: 'src/*',
+      exclude: ['node_modules'],
+      extension: ['.js', '.ts', '.vue'],
+      requireEnv: false,
+      forceBuildInstrument: Boolean(process.env.INSTRUMENT_BUILD),
+    }),
   ],
+  build: {
+    sourcemap: 'inline',
+  },
 })

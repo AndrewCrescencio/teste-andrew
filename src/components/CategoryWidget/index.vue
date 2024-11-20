@@ -93,7 +93,8 @@ const onSubmit = handleSubmit(() => {
         <Input
           :id="category.id"
           ref="categoryNameInputRef"
-          v-model.trim="categoryName" :disabled="isLoading" type="text" minlength="3" maxlength="48" class="h-full"
+          v-model.trim="categoryName"
+          aria-labelledby="input-nome-categoria" :disabled="isLoading" type="text" minlength="3" maxlength="48" class="h-full"
           @keydown.enter.prevent="onSubmit" @keydown.esc.prevent="cancelEdit"
         />
         <small id="categoryName-help" class="absolute z-1 text-xs color-red font-500">
@@ -111,7 +112,7 @@ const onSubmit = handleSubmit(() => {
           </Button>
           <Button
             :disabled="isLoading || category.name === categoryName"
-            aria-label="Salvar" class="grid h-9 w-9 place-content-center rounded-full bg-[#DA3468] color-white"
+            aria-label="Salvar" class="grid h-9 w-9 cursor-pointer place-content-center rounded-full bg-[#DA3468] color-white"
           >
             <span class="sr-only">salvar</span>
             <!-- <div class="i-tabler-check not-sr-only block h-4 w-4 color-white" /> -->

@@ -7,5 +7,11 @@ module.exports = defineConfig({
       framework: 'vue',
       bundler: 'vite',
     },
+    setupNodeEvents(on, config) {
+      // eslint-disable-next-line ts/no-require-imports
+      require('@cypress/code-coverage/task')(on, config)
+
+      return config
+    },
   },
 })
