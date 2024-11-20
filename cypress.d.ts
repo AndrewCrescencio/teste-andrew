@@ -1,4 +1,4 @@
-import type { mount } from 'cypress/react'
+import type { mount } from 'cypress/vue'
 
 // Augment the Cypress namespace to include type definitions for
 // your custom command.

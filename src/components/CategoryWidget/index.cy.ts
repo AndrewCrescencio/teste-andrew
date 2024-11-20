@@ -30,7 +30,8 @@ describe('CategoryWidget.vue component', () => {
         plugins: [pinia],
       },
       props: {
-        category: { id: 1, name: 'Test Category' },
+        // category: { id: 1, name: 'Test Category' },
+        category: { id: '', name: 'Test Category', createdAt: '', updatedAt: '', hasChildren: false },
         isSubCategory: false,
       },
     })
