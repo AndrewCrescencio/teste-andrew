@@ -123,7 +123,7 @@ const onSubmit = handleSubmit(() => {
       </form>
     </div>
     <div v-else class="h-[52px] w-full flex items-center justify-between rounded-[14px] bg-[#F3F3F5] px-4">
-      <p class="color-[#29354F]">
+      <p class="category-name color-[#29354F]">
         {{ category.name }}
       </p>
       <ListItemMenu class="text-left">

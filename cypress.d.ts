@@ -9,5 +9,9 @@ declare global {
     interface Chainable {
       mount: typeof mount
     }
+    interface Window {
+      // should use some type from Pinia
+      Pinia: any
+    }
   }
 }

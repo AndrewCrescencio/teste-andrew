@@ -14,4 +14,10 @@ module.exports = defineConfig({
       return config
     },
   },
+
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
 })

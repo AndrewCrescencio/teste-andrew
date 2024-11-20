@@ -11,9 +11,9 @@ useHead({
 <template>
   <main>
     <section class="mx-auto px-4 container">
-      <p class="text-xl text-[#31436F] font-600">
+      <h1 class="text-xl text-[#31436F] font-600">
         Organize seu catálogo com categorias e subcategorias
-      </p>
+      </h1>
       <p class="mb-6 text-[#586893]">
         Ao usar as categorias e subcategorias do catálogo, você ajuda seus clientes a
         encontrarem os produtos

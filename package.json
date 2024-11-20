@@ -32,6 +32,7 @@
     "@cypress/code-coverage": "^3.13.7",
     "@iconify-json/tabler": "^1.2.8",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@pinia/testing": "^0.1.7",
     "@types/node": "^22.9.1",
     "@unocss/eslint-config": "^0.64.1",
     "@unocss/preset-icons": "^0.64.1",
