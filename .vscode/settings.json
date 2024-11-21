@@ -1,0 +1,102 @@
+{
+  // Custom words for spell-checker
+  "cSpell.words": [
+    "Vitesse",
+    "Vite",
+    "unocss",
+    "vitest",
+    "vueuse",
+    "pinia",
+    "demi",
+    "antfu",
+    "iconify",
+    "intlify",
+    "vitejs",
+    "unplugin",
+    "pnpm"
+  ],
+  // i18n Ally configuration
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": "locales",
+  "i18n-ally.sortKeys": true,
+  // Prettier formatting disabled
+  "prettier.enable": false,
+  "editor.formatOnSave": true,
+  // Enable auto-fixing on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  // Disable stylistic rule notifications, but allow auto-fix
+  "eslint.rules.customizations": [
+    {
+      "rule": "style/*",
+      "severity": "off"
+    },
+    {
+      "rule": "format/*",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spacing",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spaces",
+      "severity": "off"
+    },
+    {
+      "rule": "*-order",
+      "severity": "off"
+    },
+    {
+      "rule": "*-dangle",
+      "severity": "off"
+    },
+    {
+      "rule": "*-newline",
+      "severity": "off"
+    },
+    {
+      "rule": "*quotes",
+      "severity": "off"
+    },
+    {
+      "rule": "*semi",
+      "severity": "off"
+    }
+  ],
+  // ESLint validation for various file types
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  // Editor preferences for line breaking and indentation
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.autoIndent": "full",
+  "editor.formatOnPaste": true,
+  // Workbench settings
+  "workbench.sideBar.location": "right",
+  "workbench.editor.tabSizing": "shrink",
+  // Additional improvements
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "onFocusChange",
+  // Emmet settings for convenience
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  }
+}
