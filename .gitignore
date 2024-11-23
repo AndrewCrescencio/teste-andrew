@@ -28,3 +28,15 @@ coverage/*
 
 tsconfig.app.tsbuildinfo
 tsconfig.node.tsbuildinfo
+
+#https://github.com/istanbuljs/nyc/blob/main/.gitignore
+.nyc_output
+coverage
+node_modules
+test/build/
+.self_coverage
+self-coverage/
+.tap
+*.swp
+test/fixtures/cli/coverage.json
+needs-transpile.js
