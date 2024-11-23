@@ -1,5 +1,16 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import { useHead } from '@unhead/vue';
+import { RouterLink } from 'vue-router';
+
+definePage({
+  meta: {
+    title: 'Home',
+  },
+})
+
+useHead({
+  title: 'RediRedi',
+})
 </script>
 
 <template>

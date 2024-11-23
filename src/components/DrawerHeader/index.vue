@@ -1,18 +1,14 @@
 <script lang="ts" setup>
-import { useNavigate } from '@/composables/useNavigate'
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useNavigate } from '@/composables/useNavigate';
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
 
 const { goBack } = useNavigate()
 const route = useRoute()
 
 const headerText = computed(() => {
-  // TODO: usar meta para ter mais controle
-  if (route.path.startsWith('/categories')) {
-    return 'Categorias'
-  }
-  else if (route.path.startsWith('/subcategories')) {
-    return 'Subcategorias'
+  if (route.meta?.title) {
+    return route.meta?.title
   }
   return 'RediRedi'
 })

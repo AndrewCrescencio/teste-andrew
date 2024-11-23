@@ -1,7 +1,13 @@
 <script lang="ts" setup>
-import CategoryIntro from '@/components/CategoryIntro/index.vue'
-import Loader from '@/components/Loader/index.vue'
-import { useHead } from '@unhead/vue'
+import CategoryIntro from '@/components/CategoryIntro/index.vue';
+import Loader from '@/components/Loader/index.vue';
+import { useHead } from '@unhead/vue';
+
+definePage({
+  meta: {
+    title: 'Categorias',
+  },
+})
 
 useHead({
   title: 'RediRedi | Categorias',

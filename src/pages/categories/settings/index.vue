@@ -1,6 +1,17 @@
 <script lang="ts" setup>
-import CategoryManager from '@/components/CategoryManager/index.vue'
-import Loader from '@/components/Loader/index.vue'
+import CategoryManager from '@/components/CategoryManager/index.vue';
+import Loader from '@/components/Loader/index.vue';
+import { useHead } from '@unhead/vue';
+
+definePage({
+  meta: {
+    title: 'Categorias',
+  },
+})
+
+useHead({
+  title: 'RediRedi | Categorias',
+})
 </script>
 
 <template>
