@@ -1,5 +1,4 @@
 {
-  // Custom words for spell-checker
   "cSpell.words": [
     "Vitesse",
     "Vite",
@@ -15,20 +14,19 @@
     "unplugin",
     "pnpm"
   ],
-  // i18n Ally configuration
   "i18n-ally.sourceLanguage": "en",
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "locales",
   "i18n-ally.sortKeys": true,
-  // Prettier formatting disabled
+  // Disable the default formatter
   "prettier.enable": false,
-  "editor.formatOnSave": true,
-  // Enable auto-fixing on save
+  "editor.formatOnSave": false,
+  // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "never"
   },
-  // Disable stylistic rule notifications, but allow auto-fix
+  // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
     {
       "rule": "style/*",
@@ -36,6 +34,10 @@
     },
     {
       "rule": "format/*",
+      "severity": "off"
+    },
+    {
+      "rule": "*-indent",
       "severity": "off"
     },
     {
@@ -67,7 +69,10 @@
       "severity": "off"
     }
   ],
-  // ESLint validation for various file types
+  // The following is optional.
+  // It's better to put under project setting `.vscode/settings.json`
+  // to avoid conflicts with working with different eslint configs
+  // that does not support all formats.
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -79,24 +84,5 @@
     "json",
     "jsonc",
     "yaml"
-  ],
-  // Editor preferences for line breaking and indentation
-  "editor.wordWrap": "on",
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "editor.autoIndent": "full",
-  "editor.formatOnPaste": true,
-  // Workbench settings
-  "workbench.sideBar.location": "right",
-  "workbench.editor.tabSizing": "shrink",
-  // Additional improvements
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "files.autoSave": "onFocusChange",
-  // Emmet settings for convenience
-  "emmet.includeLanguages": {
-    "vue-html": "html",
-    "javascript": "javascriptreact"
-  }
+  ]
 }
