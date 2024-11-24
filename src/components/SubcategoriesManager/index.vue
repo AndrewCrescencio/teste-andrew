@@ -81,15 +81,15 @@ onMounted(async () => {
     </main>
 
     <AlertDialog v-if="isDialogOpen" :open="isDialogOpen" @close="onCancelDeleteCategory">
-      <AlertDialogContent class="rounded-3xl bg-white max-sm:max-w-80%">
+      <AlertDialogContent class="bg-white text-left">
         <AlertDialogHeader>
           <div class="i-tabler-alert-triangle mx-auto h-20 w-20" />
-          <AlertDialogTitle class="text-xl color-[#31436F] font-600 -mb-2">
+          <AlertDialogTitle class="text-left text-xl color-[#31436F] font-600 -mb-2">
             Deseja excluir a categoria?
           </AlertDialogTitle>
           <AlertDialogDescription>
             <p class="text-left color-[#586893] font-500">
-              Essa ação é irreversível e implica exclusão das subcategorias vinculadas. <br> Os produtos ligados a essa
+              Essa ação é irreversível e implica na exclusão das subcategorias vinculadas. <br> Os produtos ligados a essa
               categoria não serão excluidos.
             </p>
           </AlertDialogDescription>
