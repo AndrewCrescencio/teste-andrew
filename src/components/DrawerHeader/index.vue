@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { useNavigate } from '@/composables/useNavigate';
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
+import { useNavigate } from '@/composables/useNavigate'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 
 const { goBack } = useNavigate()
 const route = useRoute()

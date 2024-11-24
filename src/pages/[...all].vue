@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { useHead } from '@unhead/vue';
-import { RouterLink } from 'vue-router';
+import { useHead } from '@unhead/vue'
+import { RouterLink } from 'vue-router'
 
 definePage({
   meta: {
