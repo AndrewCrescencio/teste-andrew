@@ -1,19 +1,25 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2023"],
+    "lib": [
+      "ES2023"
+    ],
     "moduleDetection": "force",
     "baseUrl": ".",
     "module": "ESNext",
-
     /* Bundler mode */
     "moduleResolution": "bundler",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     },
-    "types": ["unplugin-vue-router/client", "vite-plugin-vue-layouts/client"],
+    "types": [
+      "unplugin-vue-router/client",
+      "vite-plugin-vue-layouts/client",
+      "vitest"
+    ],
     "allowImportingTsExtensions": true,
-
     /* Linting */
     "strict": true,
     "noFallthroughCasesInSwitch": true,
@@ -23,5 +29,9 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": ["vite.config.ts", "src/typed-router.d.ts", "cypress.d.ts"]
+  "include": [
+    "vite.config.ts",
+    "src/typed-router.d.ts",
+    "cypress.d.ts"
+  ]
 }

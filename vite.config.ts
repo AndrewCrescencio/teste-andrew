@@ -54,4 +54,9 @@ export default defineConfig({
   build: {
     sourcemap: 'inline',
   },
+
+  test: {
+    include: ['test/**/*.test.ts', 'src/**/*.test.ts'],
+    environment: 'jsdom',
+  },
 })
